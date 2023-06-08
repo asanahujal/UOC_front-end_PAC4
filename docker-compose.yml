@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  pokedex:
+    build: pokedex
+    container_name: pokedex
+    volumes: 
+      - ./pokedex:/pokedex
+    ports:
+      - 3000:3000
